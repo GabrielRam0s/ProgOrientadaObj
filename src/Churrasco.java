@@ -16,7 +16,6 @@ public class Churrasco {
         }
     }
 
-    // Getters e Setters
     public double getQtdCarne() {
         return qtdCarne;
     }

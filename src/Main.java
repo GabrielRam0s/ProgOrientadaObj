@@ -4,7 +4,7 @@ public class Main {
         Pessoa p1 = new Pessoa("João", "Masculino", 15, false);
         Pessoa p2 = new Pessoa("Maria", "Feminino", 10, false);
         Pessoa p3 = new Pessoa("Ana", "Feminino", 2, false);
-        Pessoa p4 = new Pessoa("Carlos", "Masculino", 20, true); // Vegetariano
+        Pessoa p4 = new Pessoa("Carlos", "Masculino", 20, true);
 
         Churrasco churrasco = new Churrasco();
 
