@@ -49,7 +49,7 @@ public class Cliente {
     }
 
     public String obterNome() {
-        return nome;
+        return this.nome;
     }
 
     public void extrato(){
