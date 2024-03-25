@@ -12,6 +12,9 @@ public class Cliente {
         this.limite = limite;
     }
 
+    protected Cliente(){
+    }
+
     public void sacar(double quantia, boolean mostrarMensagem) {
         if (quantia <= checarSaldo()) {
             saldo -= quantia;
