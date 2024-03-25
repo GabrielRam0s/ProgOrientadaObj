@@ -11,10 +11,10 @@ public class Main {
 
         cliente1.depositar(200, true);
 
-        new Transferencia().transferir(cliente2, cliente1, 202);
+        Transferencia.transferir(cliente2, cliente1, 202);
         cliente2.sacar(350, true);
 
-        new Transferencia().transferir(cliente1, cliente2, 500);
+        Transferencia.transferir(cliente1, cliente2, 500);
 
 
     }

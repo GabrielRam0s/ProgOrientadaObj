@@ -3,7 +3,7 @@ import Exercicios.Exercicio4.*;
 
 public class Transferencia {
 
-    public void transferir( Cliente remetente, Cliente destinatario, double valor){
+    public static void transferir( Cliente remetente, Cliente destinatario, double valor){
         if(remetente.checarSaldo() >= valor){
             remetente.sacar(valor, false);
             destinatario.depositar(valor, false);
