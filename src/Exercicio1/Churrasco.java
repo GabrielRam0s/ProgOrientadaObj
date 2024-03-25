@@ -1,3 +1,4 @@
+package Exercicio1;
 public class Churrasco {
 
     private double qtdCarne;
