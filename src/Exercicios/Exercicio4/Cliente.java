@@ -14,24 +14,28 @@ public class Cliente {
 
     public void sacar(double quantia, boolean mostrarMensagem) {
         if (quantia <= checarSaldo()) {
-            if (quantia <= saldo) {
-                saldo -= quantia;
-            } else {
-                limite -= quantia - saldo;
-                saldo = 0;
-            }
+            saldo -= quantia;
             if(mostrarMensagem){
-                System.out.println(obterNome()+", saque de R$" + quantia + " foi realizado com sucesso. Seu novo saldo: R$"+checarSaldo());
+                System.out.println("*******************SAQUE*******************");
+                System.out.println(obterNome()+", saque de R$" + quantia + " foi realizado com sucesso.");
+                extrato();
+                System.out.println("*******************************************");
             }
         } else if (mostrarMensagem) {
-            System.out.println(obterNome()+ ", não foi possível realizar o saque de R$"+quantia+". Saldo insuficiente. Seu saldo atual é R$"+checarSaldo());
+            System.out.println("*******************SAQUE*******************");
+            System.out.println(obterNome()+ ", não foi possível realizar o saque de R$"+quantia+". Saldo insuficiente.");
+            extrato();
+            System.out.println("*******************************************");
         }
     }
 
     public void depositar(double quantia, boolean mostrarMensagem) {
         saldo += quantia;
         if(mostrarMensagem){
-            System.out.println(obterNome()+", depósito de R$" + quantia+ " foi realizado com sucesso. Seu novo saldo é: R$"+checarSaldo());
+            System.out.println("****************DEPÓSITO*******************");
+            System.out.println(obterNome()+", depósito de R$" + quantia+ " foi realizado com sucesso.");
+            extrato();
+            System.out.println("*******************************************");
         }
             
     }
@@ -48,7 +52,8 @@ public class Cliente {
     public void extrato(){
         System.out.println("-----------------EXTRATO----------------");
         System.out.println("NOME DO TITULAR: "+obterNome());
-        System.out.println("SALDO: R$"+checarSaldo());
+        System.out.println("SALDO: R$"+saldo);
+        System.out.println("LIMITE DE CRÉDITO: R$"+limite);
         System.out.println("----------------------------------------");
     }
 }
