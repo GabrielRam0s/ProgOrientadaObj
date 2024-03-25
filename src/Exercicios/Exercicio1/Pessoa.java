@@ -1,4 +1,5 @@
-package Exercicio1;
+package Exercicios.Exercicio1;
+
 public class Pessoa {
 
     private String nome;

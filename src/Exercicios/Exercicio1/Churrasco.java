@@ -1,4 +1,4 @@
-package Exercicio1;
+package Exercicios.Exercicio1;
 public class Churrasco {
 
     private double qtdCarne;
