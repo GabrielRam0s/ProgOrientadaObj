@@ -6,7 +6,6 @@ public class Cliente {
     private double saldo;
     private double limite;
 
-    // Construtor
     public Cliente(String nome, double saldo, double limite) {
         this.nome = nome;
         this.saldo = saldo;
